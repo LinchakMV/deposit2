@@ -1,0 +1,66 @@
+---
+title: deposits
+variants:
+ - title: Депозит «Стандарт +»
+   text: Призначений для Вкладників, які хочуть отримати від коштів високий прибуток після закінчення строку депозиту
+
+ - title: Family & Friends
+   text: Передбачений для клієнтів, що бажають отримувати ще більше доходу разом зі своїми близькими та друзями або ж отримувати бонус від розміщення своїх власних додаткових коштів.
+
+ - title: Подарунок на повноліття
+   text: Спеціальний вклад для збереження коштів для дітей які може отримати ці кошти в день досягнення 18-ти річного віку, як подарунок від батьків, дідусів, бабусь та інших близьких.
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+    {% include "partials/_header.html" %}
+    <!--begin sub-menu-->
+    <div class="sub-menu">
+    	<img src="../img/logo.png" alt="KredoBank">
+    	<ul class="sub-menu__list">
+    		<li class="sub-menu__item"><a href="#">Кредити</a></li>
+    		<li class="sub-menu__item active__sub-menu"><a href="#">Депозити</a></li>
+    		<li class="sub-menu__item"><a href="#">Рахунки та пакети</a></li>
+    		<li class="sub-menu__item"><a href="#">Платіжні картки</a></li>
+    		<li class="sub-menu__item"><a href="#">Страхування</a></li>
+    		<li class="sub-menu__item"><a href="#">Грошові перекази</a></li>
+    		<li class="sub-menu__item"><a href="#">Цінні папери</a></li>
+    	</ul>
+    </div>
+    <!--end sub-menu-->
+    <!--deposit-->
+    <div class="deposit">
+    	<div class="deposit__info">
+    		<h5>KredoBank —</h5>
+			<h1>Депозити</h1>
+			<p>Вклади від Кредобанку це надійні гарантії збереження та примноження заощаджень. Ми впевнені, що серед наших пропозицій Ви знайдете саме цей вклад, умови якого задовольнять всі Ваші очікування.</p>
+			<h2>Переваги наших депозитів</h2>
+			<ul>
+				<li>Вклади у гривнях, доларах США або ЄВРО</li>
+				<li>На строк від 1 дня до 20 років</li>
+				<li>Отримання коштів у будь-якому банкоматі України - безкоштовно *</li>
+			</ul>
+    	</div>
+    	<div>
+    		<img src="./img/depositi.png" alt="safe">
+    	</div>
+    </div>
+    <!--end deposit-->
+    <!--variants-->
+    <div class="variants">
+        {% for variant in variants %}
+		<div class="variant">
+			<h3 class="variant__title"><a href="#">{{variant.title}}</a></h3>
+			<p class="variant__text"><a href="#">{{variant.text}}</a></p>
+			<div class="variant__buttons">
+			    <a href="#" class="button-order">Замовити <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			</div>            
+		</div>
+        {% endfor %}		
+	</div>
+    <!--end variants-->
+    {% include "partials/_accordion.html" %}
+    <div class="copyright">
+		<p>© 2016. <a href="#">KredoBank</a>. Developer by <a href="#">Sponge D&D</a>.</p>
+	</div>
+{% endblock %}
