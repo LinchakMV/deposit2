@@ -1,72 +1,68 @@
 .accordion
-	margin: 50px 86px 0 65px
+    margin: 50px 86px 0 65px
+.accordion__item 
+    cursor: pointer
+    padding: 24px 24px 10px 29px
+    width: 100%
+    text-align: left
+    border: 1px solid #d4d4d4
+    outline: none
+    color: #004f9e
+    font-size: 24px
+    background: #fff
+    font-weight: 700
+    
+.accordion__item:hover 
+    background-color: #f6f6f6
 
-.accordion__list
-  margin: 0
-  padding: 0
-  list-style: none
-  border: 1px solid #d4d4d4
+.accordion__item.active
+    border-bottom: none
+    color: #000
 
-.accordion__item
-  border-bottom: 1px solid #d4d4d4
+.panel 
+    padding: 0 18px
+    max-height: 0
+    overflow: hidden
+    border-left: 1px solid #d4d4d4
+    border-right: 1px solid #d4d4d4
+    margin: -1px
+    p
+        margin-bottom: 40px
+        margin-top: 15px
+        line-height: 1.667
+        font-size: 22px  
+    h4
+        font-size: 20px
+        padding-top: 15px
+    a
+        text-decoration: none
+        color: #004f9e
+ 
+.accordion-link
+    margin: 5px 0 40px 0
+    padding: 0
+    list-style-type: none
+    a
+        font-size: 17px
+        line-height: 30px
 
-.accordion__trigger
-  display: block
-  color: #3372b1
-  font-weight: 700
-  cursor: pointer
-  padding: 24px 24px 24px 29px
-  font-size: 24px
+.panel.show 
+    opacity: 1
+    max-height: 500px
+    padding: 0 24px 24px 24px
+    border-bottom: 1px solid #d4d4d4
+    
 
-.accordion__trigger:hover
-  background: #f6f6f6
+.accordion__item:after 
+    content: '+'
+    font-size: 39px
+    font-weight: 500
+    color: #3372b1
+    float: right
+    margin-left: 5px
 
-.accordion__target
-  border: 0
-  height: 1px
-  margin: -1px
-  overflow: hidden
-  padding: 0
-  position: absolute
-  width: 1px
-  p
-	  margin-bottom: 40px
-	  line-height: 1.667
-	  font-size: 22px
-  
-  a
-	  color: #3372b1
-	  text-decoration: none
-  
-  h4
-	  font-size: 20px
-  
+.accordion__item.active:after 
+    content: ""
 
 .link-more span
 	color: #f18b00
-
-.accordion-link
-	margin-top: 5px
-	padding: 0
-	list-style-type: none
-	a
-		font-size: 17px
-		line-height: 30px
-		
-.accordion-active
-  position: static
-  overflow: visible
-  width: auto
-  height: auto
-  margin: auto
-  padding: 0 24px 24px 24px
-  
-.font-black
-	 color: #000
- 
-.expand
-	 float: right
-	 font-size: 39px
-	 color: #3372b1
-	 margin-top: -8px
- 

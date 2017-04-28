@@ -10,13 +10,14 @@ variants:
  - title: Подарунок на повноліття
    text: Спеціальний вклад для збереження коштів для дітей які може отримати ці кошти в день досягнення 18-ти річного віку, як подарунок від батьків, дідусів, бабусь та інших близьких.
 ---
+
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
     {% include "partials/_header.html" %}
     <!--begin sub-menu-->
     <div class="sub-menu">
-    	<img src="../img/logo.png" alt="KredoBank">
+    	<img src="./img/logo.png" alt="KredoBank">
     	<ul class="sub-menu__list">
     		<li class="sub-menu__item"><a href="#">Кредити</a></li>
     		<li class="sub-menu__item active__sub-menu"><a href="#">Депозити</a></li>
@@ -59,6 +60,7 @@ variants:
         {% endfor %}		
 	</div>
     <!--end variants-->
+
     {% include "partials/_accordion.html" %}
     <div class="copyright">
 		<p>© 2016. <a href="#">KredoBank</a>. Developer by <a href="#">Sponge D&D</a>.</p>
