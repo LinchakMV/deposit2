@@ -32,3 +32,14 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, vero, ipsum nemo eligendi deserunt totam? Architecto dolorem, laboriosam, voluptates maiores unde, itaque esse aliquam nulla illo quasi cum quaerat. Doloribus.</p>
     </div>
 </div>
+<script type="text/javascript">
+    var acc = document.getElementsByClassName("accordion__item");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+</script>
