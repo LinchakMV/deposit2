@@ -1,3 +1,5 @@
+## Demo (http://deposits-no-adaptive.surge.sh/)
+
 #How to use
 
 Clone this repo and then in command line type:
